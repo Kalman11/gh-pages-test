@@ -2,7 +2,7 @@ import { createSQLiteThread, createHttpBackend } from "sqlite-wasm-http";
 
 (async function main() {
     const httpBackend = createHttpBackend({
-        maxPageSize: 4096,
+        maxPageSize: 65536,
         timeout: 10000,
         cacheSize: 4096
     });
