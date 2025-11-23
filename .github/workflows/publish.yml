@@ -15,7 +15,7 @@ jobs:
           npm run build
 
       - name: Deploy to gh-pages
-        uses: JamesIves/github-pages-deploy-action@v5
+        uses: JamesIves/github-pages-deploy-action@v4
         with:
           branch: gh-pages         # target branch
           folder: temp             # directory to publish
