@@ -7,7 +7,7 @@ import { createSQLiteThread, createHttpBackend } from "sqlite-wasm-http";
         cacheSize: 4096
     });
     const dbURL =
-        '/Chinook_Sqlite.sqlite';
+        'Chinook_Sqlite.sqlite';
     const db = await createSQLiteThread({ http: httpBackend, debug: console.log });
 
     const submitBtn = document.getElementById('submitBtn');
