@@ -17,7 +17,8 @@ module.exports = {
         new PreloadWebpackPlugin(),
         new CopyPlugin({
             patterns: [
-                { from: 'Chinook_Sqlite.sqlite', to: '.' }
+                { from: 'Chinook_Sqlite.sqlite', to: '.' },
+                { from: '.gitattributes', to: '.' }
             ]
         })
     ],
