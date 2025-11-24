@@ -2,13 +2,13 @@ import { createSQLiteThread, createHttpBackend } from "sqlite-wasm-http";
 
 (async function main() {
     const httpBackend = createHttpBackend({
-        maxPageSize: 65536,
+        maxPageSize: 4096,
         timeout: 10000,
         cacheSize: 4096
     });
     const dbURL =
         'Chinook_Sqlite.sqlite.gz';
-    const db = await createSQLiteThread({ http: httpBackend, debug: console.log });
+    const db = await createSQLiteThread({ http: httpBackend });
 
     const submitBtn = document.getElementById('submitBtn');
     const inputField = document.getElementById('artistInput');
